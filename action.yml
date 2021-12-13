@@ -1,0 +1,28 @@
+name: Delete Porter preview environment
+description: Delete Porter preview environment
+inputs:
+  project:
+    description: project ID of Porter project
+    required: true
+  cluster:
+    description: cluster ID of Porter cluster
+    required: true
+  token:
+    description: token for Porter authentication
+    required: true
+  installation_id:
+    description: the installation id for the Github app which manages preview envs
+    required: true 
+  namespace:
+    description: namespace for the application
+    required: false
+    default: default
+  host:
+    description: host URL of Porter instance
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  color: purple
+  icon: upload-cloud
