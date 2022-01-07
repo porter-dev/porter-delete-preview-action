@@ -13,6 +13,12 @@ inputs:
   installation_id:
     description: the installation id for the Github app which manages preview envs
     required: true 
+  repo_name:
+    description: name of source repository
+    required: true
+  repo_owner:
+    description: username of source repository owner
+    required: true
   namespace:
     description: namespace for the application
     required: false
