@@ -10,17 +10,8 @@ inputs:
   token:
     description: token for Porter authentication
     required: true
-  environment_id:
-    description: Environment ID for preview environment deployments
-    required: true
-  repo_name:
-    description: name of source repository
-    required: true
-  repo_owner:
-    description: username of source repository owner
-    required: true
-  pr_number:
-    description: Pull request number for deployment
+  deployment_id:
+    description: Deployment ID for preview environment deployments
     required: true
   host:
     description: host URL of Porter instance
